@@ -1,0 +1,1 @@
+Learning the basics of Python through projects and simple programs!
