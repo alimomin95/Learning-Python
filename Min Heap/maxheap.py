@@ -1,5 +1,5 @@
 """
-MIN HEAP IMPLEMENTATION by Ali Momin
+MAX HEAP IMPLEMENTATION by Ali Momin
 Date: 23/11/2017
 """
 
@@ -28,7 +28,7 @@ class MaxHeap:
         parent = self.getparent(index)
         if parent is False or parent is 0:
             return True
-        while self.array[parent] < self.array[index]:
+        while self.array[parent] < self.array[index]: # You can replace '<' with '>' for a min heap invariant and the whole code will still work!!!
             temp = self.array[index]
             self.array[index] = self.array[parent]
             self.array[parent] = temp
